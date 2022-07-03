@@ -1,0 +1,26 @@
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+"Indicates what fields are available at the top level of a query operation."
+
+type Query {
+    cotacoesPaginator: [Cotacoes!] !@paginate  
+    cotacoesAll: [Cotacoes!]! @all
+    cotacoesFirst: Cotacoes @first
+    cotacoesFindById(id: ID @eq): Cotacoes @find  
+    cotacoesFindByAcao(acao: String! @eq): Cotacoes @first
+}
+
+type Cotacoes {
+  id: ID!
+  acao: String!
+  min: String!
+  max: String!
+  variacao: String!
+  created_at: String!
+  updated_at: String
+}
+
+
+
+    
