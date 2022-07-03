@@ -21,7 +21,7 @@ Para iniciar o servidor local
 ## http://localhost:8000/graphql-playground
 Ferramenta para interagir com o GraphQL 
 
-## Biblotecas Utilizadas
+## Bibliotecas Utilizadas
 
 ## https://lighthouse-php.com/
 GraphQL
